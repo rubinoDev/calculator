@@ -1,0 +1,127 @@
+@import './variables';
+@import './reset';
+
+body{
+  background-image: url(../assets/bgWorkdesk.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  .calculator-body{
+    background-color: $orange;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    border-radius: 1.3rem;
+    width: 29rem;
+    border: .2rem solid #00000036;
+    outline: .5rem solid $orange;
+    position: relative;
+
+    #response{
+      font-family: $font-viewfinder;
+
+    }
+
+    .calculator-viewfinder{
+      background-color: $color-viewfinder;
+      width: 100%;
+      height: 6.5rem;
+      border-radius: 1.3rem;
+      margin-bottom: 2rem;
+
+      padding: 1.5rem;
+      font-size: 3rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      overflow: hidden;
+      
+    }
+    
+  .list-buttons{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+    .standard-line, .unusual-line{
+      display: flex;
+      gap: 1rem;
+    }
+
+    .standard-line{
+      margin: 0 auto;
+    }
+
+    
+    .standard-line:first-child button{
+      height: 3rem;
+      border-radius: 2rem;
+
+      .material-symbols-outlined{
+        font-size: 4rem;
+      }
+      &:first-child{
+        background-color: #1A4D2E;
+        color: #FAF3E3;
+        font-size: 1.2rem;
+        &:hover{
+          filter: brightness(1.1);
+        }
+      }
+      &:nth-child(2){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+    }
+
+    .unusual-line{
+      margin-left: 1.3rem;
+      width: 74%;
+    }
+
+    .unusual-line #double-column{
+      width: 10.9rem;
+      border-radius: 2rem;
+    }
+
+
+    .unusual-line #double-row{
+      height: 10.9rem;
+      border-radius: 2rem;
+      position: absolute;
+      top: 25.9rem;
+      right: 2.6rem;
+      width: 5.2rem;
+      
+    }
+    
+
+      button{
+        cursor: pointer;
+        border: none;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 100%;
+        font-size: 2rem;
+        box-shadow: 0.2rem 0.2rem #00000073;
+        background-color: #FAF3E3;
+        
+        &:hover{
+          background-color: white;
+        }
+        &:active{
+          transform: translateY(.3rem);
+          box-shadow: .1rem .1rem .2rem #00000073;
+        
+        }
+      }
+    }
+  }
+}

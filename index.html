@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="http://fonts.cdnfonts.com/css/ds-digital" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/style.css">      
+  <title>Calculadora</title>
+</head>
+<body>
+  <div class="calculator-body">
+    <div class="calculator-viewfinder">
+      <p id="response"></p>
+    </div>
+    <ul class="list-buttons">
+      <li class="standard-line">
+        <button data-clean="on/ac">ON/AC</button>
+        <button>
+          <span data-clean="backspace" class="material-symbols-outlined">backspace</span>
+        </button>
+        <button data-operator="/">/</button>
+        <button data-operator="*">∗</button>
+      </li>
+
+      <li class="standard-line">
+        <button data-number="7">7</button>
+        <button data-number="8">8</button>
+        <button data-number="9">9</button>
+        <button data-operator="-">-</button>
+
+      </li>
+
+      <li class="standard-line">
+        <button data-number="4">4</button>
+        <button data-number="5">5</button>
+        <button data-number="6">6</button>
+        <button data-operator="+">+</button>
+      </li>
+
+      <li class="unusual-line">
+        <button data-number="1">1</button>
+        <button data-number="2">2</button>
+        <button data-number="3">3</button>
+      </li>
+
+      <li class="unusual-line">
+        <button data-number="0" id="double-column">0</button>
+        <button data-operator=".">.</button>
+        <button data-equals="=" id="double-row">=</button>
+      </li>
+    </ul>
+  </div>
+
+  <script src="./scripts/main.js"></script>
+</body>
+</html>

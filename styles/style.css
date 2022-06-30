@@ -1,0 +1,166 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62,5%;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  list-style: none;
+}
+
+body {
+  background-image: url(../assets/bgWorkdesk.jpg);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+body .calculator-body {
+  background-color: #FF9F29;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  border-radius: 1.3rem;
+  width: 29rem;
+  border: .2rem solid #00000036;
+  outline: 0.5rem solid #FF9F29;
+  position: relative;
+}
+
+body .calculator-body #response {
+  font-family: "DS-Digital", sans-serif;
+}
+
+body .calculator-body .calculator-viewfinder {
+  background-color: #727e78;
+  width: 100%;
+  height: 6.5rem;
+  border-radius: 1.3rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  font-size: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  overflow: hidden;
+}
+
+body .calculator-body .list-buttons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+body .calculator-body .list-buttons .standard-line, body .calculator-body .list-buttons .unusual-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+body .calculator-body .list-buttons .standard-line {
+  margin: 0 auto;
+}
+
+body .calculator-body .list-buttons .standard-line:first-child button {
+  height: 3rem;
+  border-radius: 2rem;
+}
+
+body .calculator-body .list-buttons .standard-line:first-child button .material-symbols-outlined {
+  font-size: 4rem;
+}
+
+body .calculator-body .list-buttons .standard-line:first-child button:first-child {
+  background-color: #1A4D2E;
+  color: #FAF3E3;
+  font-size: 1.2rem;
+}
+
+body .calculator-body .list-buttons .standard-line:first-child button:first-child:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+}
+
+body .calculator-body .list-buttons .standard-line:first-child button:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .calculator-body .list-buttons .unusual-line {
+  margin-left: 1.3rem;
+  width: 74%;
+}
+
+body .calculator-body .list-buttons .unusual-line #double-column {
+  width: 10.9rem;
+  border-radius: 2rem;
+}
+
+body .calculator-body .list-buttons .unusual-line #double-row {
+  height: 10.9rem;
+  border-radius: 2rem;
+  position: absolute;
+  top: 25.9rem;
+  right: 2.6rem;
+  width: 5.2rem;
+}
+
+body .calculator-body .list-buttons button {
+  cursor: pointer;
+  border: none;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  font-size: 2rem;
+  -webkit-box-shadow: 0.2rem 0.2rem #00000073;
+          box-shadow: 0.2rem 0.2rem #00000073;
+  background-color: #FAF3E3;
+}
+
+body .calculator-body .list-buttons button:hover {
+  background-color: white;
+}
+
+body .calculator-body .list-buttons button:active {
+  -webkit-transform: translateY(0.3rem);
+          transform: translateY(0.3rem);
+  -webkit-box-shadow: .1rem .1rem .2rem #00000073;
+          box-shadow: .1rem .1rem .2rem #00000073;
+}
+/*# sourceMappingURL=style.css.map */
